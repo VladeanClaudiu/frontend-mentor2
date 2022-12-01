@@ -60,13 +60,13 @@ function App() {
         <div className='final-cost-rest'>
           <div className='final-tip-amount'>
             <p>Tip Amount <br/><span>/ person</span></p>
-            <p>10$</p>
+            <p className='total-price'>$10.5</p>
           </div>
           <div className='final-total'>
             <p>Tip Amount <br/><span>/ person</span></p>
-            <p>10$</p>
+            <p className='total-price'>$10.5</p>
           </div>
-          <button></button>
+          <button>RESET</button>
         </div>
       </div>
     </div>
