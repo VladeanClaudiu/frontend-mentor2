@@ -158,18 +158,39 @@ body {
         }
 
         .final-cost-rest {
+            grid-column: 1/3;
             display: flex;
             flex-direction: column;
             height: 200px;
             background-color: $Very-Dark-Cyan;
-            padding: 15px;
             border-radius: 15px;
             width: 100%;
             div {
+                padding: 20px 20px 0 20px;
                 color: $White;
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
+
+                p {
+                    margin: 0;
+                }
+
+                p > span {
+                    color: $Light-Grayish-Cyan;
+                    font-size: 12px
+                };
+
+                .total-price {
+                    color: $Strong-Cyan;
+                    font-size: 30px;
+                }
+            }
+
+            button {
+                background-color: $Strong-Cyan;
+                height: 50px;
+                margin: 15px;
+                
             }
             
         }
