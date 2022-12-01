@@ -50,6 +50,8 @@ body {
   width: 100%;
   text-indent: 10px;
   direction: rtl;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .container .main-app .main-select-tip {
@@ -65,24 +67,53 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 10px;
+  list-style: none;
+  padding: 0;
 }
 
-.container .main-app .main-select-tip .tip-selections button {
+.container .main-app .main-select-tip .tip-selections li {
+  float: left;
+  height: 50px;
+  position: relative;
   background-color: #00494d;
-  border: none;
+  border-radius: 10px;
+  text-align: center;
   color: white;
-  font-family: "Space Mono", monospace;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
+  font-size: 24px;
+}
+
+.container .main-app .main-select-tip .tip-selections label, .container .main-app .main-select-tip .tip-selections input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.container .main-app .main-select-tip .tip-selections input[type="radio"] {
+  opacity: 0.0;
+  z-index: 100;
+}
+
+.container .main-app .main-select-tip .tip-selections input[type="radio"]:checked + label {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.container .main-app .main-select-tip .tip-selections label {
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 90;
 }
 
 .container .main-app .main-select-tip .tip-selections input {
   border: none;
   background-color: #f4fafa;
   text-align: right;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Space Mono", monospace;
   color: #00494d;
   border-radius: 5px;
@@ -111,5 +142,7 @@ body {
   width: 100%;
   text-indent: 10px;
   direction: rtl;
+  height: 50px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=index.css.map */

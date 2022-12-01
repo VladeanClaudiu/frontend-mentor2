@@ -59,6 +59,8 @@ body {
                 // direction and indentation used to add space to the text inside the input from the right
                 text-indent: 10px;
                 direction:rtl;
+                height: 50px;
+                border-radius: 5px;
             }
         }
 
@@ -69,24 +71,55 @@ body {
             .tip-selections {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 10px;
+                gap: 10px;  
+                list-style: none;
+                padding: 0;
 
-                button {
-                   background-color: $Very-Dark-Cyan; 
-                   border: none;
-                   color: $White;
-                   font-family: $Space-Mono;
-                   font-size: 20px;
-                   border-radius: 5px;
-                   padding: 10px;
-                   width: 100%;
+                li {
+                    float:left;
+                    height: 50px;
+                    position:relative;
+                    background-color: $Very-Dark-Cyan;
+                    border-radius: 10px; 
+                    text-align: center;
+                    color: $White;
+                    font-size: 24px;
+                    
                 }
 
+                label, input {
+                    display:block;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    margin: 0;
+                }
+
+                input[type="radio"] {
+                    opacity:0.0;
+                    z-index:100;
+                }
+
+                input[type="radio"]:checked + label {
+                    background: $Strong-Cyan;
+                    color: $Very-Dark-Cyan;
+                }
+
+                label {
+                    padding:6px;
+                    border-radius: 10px;    
+                    cursor:pointer;
+                    z-index:90;
+                }
+
+    
                 input{
                     border: none;
                     background-color: $Very-Light-Grayish-Cyan;
                     text-align:right;
-                    font-size: 20px;
+                    font-size: 24px;
                     font-family: $Space-Mono;
                     color: $Very-Dark-Cyan;
                     border-radius: 5px;
@@ -116,6 +149,8 @@ body {
                 // direction and indentation used to add space to the text inside the input from the right
                 text-indent: 10px;
                 direction:rtl;
+                height: 50px;
+                border-radius: 5px;
             }
         }
     }

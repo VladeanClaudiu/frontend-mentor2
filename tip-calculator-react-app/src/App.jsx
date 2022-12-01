@@ -16,19 +16,37 @@ function App() {
 
         <div className="main-select-tip">
           <p className="headings">Select Tip %</p>
-          <div className="tip-selections">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <input
+          <ul className="tip-selections">
+            <li>
+              <input type="radio" id='5p' name="percent"/>
+              <label htmlFor="5p">5%</label>
+            </li>
+            <li>
+              <input type="radio" id='10p' name="percent"/>
+              <label htmlFor="10p">10%</label>
+            </li>
+            <li>
+              <input type="radio" id='15p' name="percent"/>
+              <label htmlFor="15p">15%</label>
+            </li>
+            <li>
+              <input type="radio" id='25p' name="percent"/>
+              <label htmlFor="25p">25%</label>
+            </li>
+            <li>
+              <input type="radio" id='50p' name="percent"/>
+              <label htmlFor="50p">50%</label>
+            </li>
+            <li>
+              <input
               name="custom-tip"
               className="bill-input"
               type="number"
               placeholder="Custom"
             />
-          </div>
+            </li>
+            
+          </ul>
         </div>
         <div className="main-number-people">
           <p className="headings">Number of People</p>
