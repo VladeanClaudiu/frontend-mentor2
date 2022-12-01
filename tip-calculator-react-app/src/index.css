@@ -6,6 +6,11 @@ body {
   background-color: #c5e4e7;
 }
 
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+
 .container h1 {
   margin: 40px 0 40px 0;
   text-align: center;
@@ -144,5 +149,31 @@ body {
   direction: rtl;
   height: 50px;
   border-radius: 5px;
+}
+
+.container .main-app .final-cost-rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  background-color: #00494d;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.container .main-app .final-cost-rest div {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

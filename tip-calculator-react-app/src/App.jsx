@@ -57,6 +57,17 @@ function App() {
             placeholder="0"
           />
         </div>
+        <div className='final-cost-rest'>
+          <div className='final-tip-amount'>
+            <p>Tip Amount <br/><span>/ person</span></p>
+            <p>10$</p>
+          </div>
+          <div className='final-total'>
+            <p>Tip Amount <br/><span>/ person</span></p>
+            <p>10$</p>
+          </div>
+          <button></button>
+        </div>
       </div>
     </div>
     </div>
