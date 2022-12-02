@@ -8,6 +8,15 @@ function App() {
 
   const [tipAmount, setTipAmount] = useState({tip: 0.00, total: 0.00})
 
+  setTimeout(()=>{
+    console.log("scrolling")
+    window.scroll({
+      top: 148,
+      left: 0,
+      behavior: 'smooth'
+    })
+  },2000)
+
   function handleBillChange(e) {
     setBill(e.target.value)
   }
