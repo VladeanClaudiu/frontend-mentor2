@@ -25,10 +25,12 @@ function App() {
    const totalPlusTip = (totalBill/numberOfPeople).toFixed(2)
    const tipPerPerson = ((totalBill - bill) / numberOfPeople).toFixed(2)
 
-   console.log(totalBill, totalPlusTip, tipPerPerson)
+   console.log(numberOfPeople)
 
    if(bill && numberOfPeople && customPercent){
-      setTipAmount(prevValue => ({tip: tipPerPerson, total: totalPlusTip}))
+    if(numberOfPeople > 0){
+      setTipAmount(({tip: tipPerPerson, total: totalPlusTip}))
+    }  
    }
    
   },[bill, numberOfPeople, customPercent])
