@@ -27,7 +27,10 @@ function App() {
 
    console.log(totalBill, totalPlusTip, tipPerPerson)
 
-   setTipAmount(prevValue => ({tip: tipPerPerson, total: totalPlusTip}))
+   if(bill && numberOfPeople && customPercent){
+      setTipAmount(prevValue => ({tip: tipPerPerson, total: totalPlusTip}))
+   }
+   
   },[bill, numberOfPeople, customPercent])
 
   function resetCalculator() {
