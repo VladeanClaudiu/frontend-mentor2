@@ -190,7 +190,7 @@ input:focus {
   width: 100%;
 }
 
-.container .main-app .final-cost-rest div {
+.container .main-app .final-cost-rest .amounts div {
   padding: 20px 20px 0 20px;
   color: white;
   display: -webkit-box;
@@ -199,20 +199,23 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container .main-app .final-cost-rest div p {
+.container .main-app .final-cost-rest .amounts div p {
   margin: 0;
 }
 
-.container .main-app .final-cost-rest div p > span {
+.container .main-app .final-cost-rest .amounts div p > span {
   color: #c5e4e7;
   font-size: 12px;
 }
 
-.container .main-app .final-cost-rest div .total-price {
+.container .main-app .final-cost-rest .amounts div .total-price {
   color: #26c0ab;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .container .main-app .final-cost-rest button {

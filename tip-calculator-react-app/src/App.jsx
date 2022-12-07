@@ -109,7 +109,8 @@ function App() {
           />
         </div>
         <div className='final-cost-rest'>
-          <div className='final-tip-amount'>
+          <div className="amounts">
+            <div className='final-tip-amount'>
             <p>Tip Amount <br/><span>/ person</span></p>
             <p className='total-price'>${tipAmount.tip}</p>
           </div>
@@ -117,6 +118,8 @@ function App() {
             <p>Total <br/><span>/ person</span></p>
             <p className='total-price'>${tipAmount.total}</p>
           </div>
+          </div>
+          
           <button disabled={false} onClick={resetCalculator}>RESET</button>
         </div>
       </div>
