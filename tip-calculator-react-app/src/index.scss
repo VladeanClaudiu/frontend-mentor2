@@ -241,8 +241,6 @@ input:focus {
                     opacity: .2;
                     transition: .2s ease-in-out;
                 }
-            
-            
         }
     }
 }
@@ -254,7 +252,7 @@ input:focus {
         .main-app {
             row-gap: 20px;
             column-gap: 30px;
-            
+
             .main-tip {
                 grid-column: 1/2;
                 margin-bottom: 10px;
