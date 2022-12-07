@@ -12,6 +12,9 @@ $Light-Grayish-Cyan: hsl(185, 41%, 84%);
 $Very-Light-Grayish-Cyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
 
+//Breakpoints
+$screen-lg-min: 768px;
+
 body {
     margin: 0;
     padding: 0;
@@ -75,6 +78,7 @@ input:focus {
                 direction:rtl;
                 height: 50px;
                 border-radius: 5px;
+                padding: 0;
             }
         }
 
@@ -147,6 +151,7 @@ input:focus {
                     // direction and indentation used to add space to the text inside the input from the right
                     text-indent: 10px;
                     direction:rtl;
+                    padding: 0;
                 }
             }
         }
@@ -156,6 +161,7 @@ input:focus {
             margin-bottom: 30px;
             
             .people-input {
+                padding: 0;
                 border: none;
                 background-color: $Very-Light-Grayish-Cyan;
                 font-size: 24px;
@@ -227,6 +233,57 @@ input:focus {
                 transition: .2s ease-in-out;
             }
             
+        }
+    }
+}
+
+@media (min-width: #{$screen-lg-min}) { 
+    .container {
+        width: 768px;
+
+        .main-app {
+            gap: 20px;
+            .main-tip {
+                grid-column: 1/2;
+                margin-bottom: 10px;
+            }
+
+            .main-select-tip {
+                grid-column: 1/2;
+                margin-bottom: 10px;
+
+                .headings {
+                    margin-top: 0;
+                }
+
+                .tip-selections {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin-bottom: 0;
+                }
+            }
+
+            .main-number-people {
+                grid-column: 1/2;
+                margin-bottom: 0;
+
+                .headings {
+                    margin-top: 0;
+                }
+            }
+
+            .final-cost-rest {
+                grid-column: 2/3;
+                grid-row: 1/4;
+
+                .final-tip-amount {
+                    margin: 20px 20px 0 20px;
+                }
+
+                .final-total {
+                    margin: 0 20px 20px 20px;
+                }
+            }
+
         }
     }
 }
