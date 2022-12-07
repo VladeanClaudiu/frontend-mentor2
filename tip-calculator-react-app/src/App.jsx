@@ -111,16 +111,17 @@ function App() {
         <div className='final-cost-rest'>
           <div className="amounts">
             <div className='final-tip-amount'>
-            <p>Tip Amount <br/><span>/ person</span></p>
-            <p className='total-price'>${tipAmount.tip}</p>
+              <p>Tip Amount <br/><span>/ person</span></p>
+              <p className='total-price'>${tipAmount.tip}</p>
+            </div>
+            <div className='final-total'>
+              <p>Total <br/><span>/ person</span></p>
+              <p className='total-price'>${tipAmount.total}</p>
+            </div>
           </div>
-          <div className='final-total'>
-            <p>Total <br/><span>/ person</span></p>
-            <p className='total-price'>${tipAmount.total}</p>
-          </div>
-          </div>
+         
+         <button disabled={false} onClick={resetCalculator}>RESET</button>
           
-          <button disabled={false} onClick={resetCalculator}>RESET</button>
         </div>
       </div>
     </div>

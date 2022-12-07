@@ -190,6 +190,10 @@ input:focus {
   width: 100%;
 }
 
+.container .main-app .final-cost-rest .amounts {
+  padding-top: 10px;
+}
+
 .container .main-app .final-cost-rest .amounts div {
   padding: 20px 20px 0 20px;
   color: white;
@@ -216,6 +220,10 @@ input:focus {
 .container .main-app .final-cost-rest .amounts div .total-price {
   color: #26c0ab;
   font-size: 35px;
+}
+
+.container .main-app .final-cost-rest .amounts .final-total {
+  padding-bottom: 10px;
 }
 
 .container .main-app .final-cost-rest button {
@@ -288,12 +296,18 @@ input:focus {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     grid-row: 1/4;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .container .main-app .final-cost-rest .final-tip-amount {
     margin: 20px 20px 0 20px;
   }
   .container .main-app .final-cost-rest .final-total {
     margin: 0 20px 20px 20px;
+  }
+  .container .main-app .final-cost-rest .button {
+    padding: 0 10px 0 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */

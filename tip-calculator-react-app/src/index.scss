@@ -189,6 +189,7 @@ input:focus {
             width: 100%;
             
             .amounts{
+                padding-top: 10px;
                 div {
                     padding: 20px 20px 0 20px;
                     color: $White;
@@ -209,32 +210,38 @@ input:focus {
                         color: $Strong-Cyan;
                         font-size: 35px;
                     } 
-                } 
+                }
+                
+                .final-total {
+                    padding-bottom: 10px;
+                }
             }
-
-            button {
-                background-color: $Strong-Cyan;
-                height: 50px;
-                margin: 20px;
-                border-radius: 5px;
-                font-size: 16px;
-                border: none;
-                font-weight: 700;
-                color: $Very-Dark-Cyan;
-                cursor: pointer;
-                font-style: $Space-Mono !important;
-                transition: .2s ease-in-out;
-            }
-
-            button:hover {
-                background-color: $Light-Grayish-Cyan;
-                transition: .2s ease-in-out;
-            }
-
-            button:disabled {
-                opacity: .2;
-                transition: .2s ease-in-out;
-            }
+           
+                button {
+                    
+                    background-color: $Strong-Cyan;
+                    height: 50px;
+                    margin: 20px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    border: none;
+                    font-weight: 700;
+                    color: $Very-Dark-Cyan;
+                    cursor: pointer;
+                    font-style: $Space-Mono !important;
+                    transition: .2s ease-in-out;
+                }
+    
+                button:hover {
+                    background-color: $Light-Grayish-Cyan;
+                    transition: .2s ease-in-out;
+                }
+    
+                button:disabled {
+                    opacity: .2;
+                    transition: .2s ease-in-out;
+                }
+            
             
         }
     }
@@ -277,6 +284,7 @@ input:focus {
             .final-cost-rest {
                 grid-column: 2/3;
                 grid-row: 1/4;
+                justify-content: space-between;
 
                 .final-tip-amount {
                     margin: 20px 20px 0 20px;
@@ -284,6 +292,10 @@ input:focus {
 
                 .final-total {
                     margin: 0 20px 20px 20px;
+                }
+
+                .button {
+                    padding: 0 10px 0 10px;
                 }
             }
 
