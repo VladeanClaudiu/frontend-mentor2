@@ -252,7 +252,9 @@ input:focus {
         width: 768px;
 
         .main-app {
-            gap: 20px;
+            row-gap: 20px;
+            column-gap: 30px;
+            
             .main-tip {
                 grid-column: 1/2;
                 margin-bottom: 10px;
@@ -294,8 +296,8 @@ input:focus {
                     margin: 0 20px 20px 20px;
                 }
 
-                .button {
-                    padding: 0 10px 0 10px;
+                button {
+                    margin: 30px;
                 }
             }
 
