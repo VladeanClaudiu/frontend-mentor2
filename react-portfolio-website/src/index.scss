@@ -1,6 +1,11 @@
 /* @link https://utopia.fyi/type/calculator?c=375,16,1.2,1440,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+//font import and declared
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+$SopaceGrotesk: 'Space Grotesk', sans-serif; 
 
-//fonst scale clamps
+
+
+//fonts scale clamps
 :root {
     --step--2: clamp(0.69rem, calc(0.66rem + 0.16vw), 0.80rem);
     --step--1: clamp(0.83rem, calc(0.77rem + 0.25vw), 1.00rem);
@@ -11,4 +16,98 @@
     --step-4: clamp(2.07rem, calc(1.73rem + 1.47vw), 3.05rem);
     --step-5: clamp(2.49rem, calc(2.02rem + 1.99vw), 3.82rem);
   }
-  
+
+//colours
+$DarkGray: #151515;
+$Cyan: #5fd9a3;
+$White: #fefefe;
+$LightGray: #cdcdcd;
+
+body {
+    background-color: ($DarkGray);
+    font-family: $SopaceGrotesk;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+
+    .page-head {
+        .logo-plus-social-media {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .logo {
+                color: $White;
+                font-size: var(--step-1);
+                letter-spacing: .2;
+
+                p {
+                    margin-bottom: 0;
+
+                    span {
+                        color: $Cyan;
+                    }
+                }
+            }
+
+            .social-media {
+                ul{
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    
+                    li {
+                        height: 20px;
+                        width: 20px;
+                        background-repeat: no-repeat;
+                        background-size: 17px 17px;
+                        margin: 0 6px 0 6px;
+                    }
+
+                    .git {
+                        background-image: url(./assets/svg/icon-github.svg);
+                        transition: .2s ease-in-out;
+                    }
+
+                    .git:hover {
+                        transition: .2s ease-in-out;
+                        filter: invert(68%) sepia(46%) saturate(427%) hue-rotate(101deg) brightness(103%) contrast(89%);
+                    }
+
+                    .linkedIn {
+                        background-image: url(./assets/svg/icon-linkedin.svg);
+                        transition: .2s ease-in-out;
+                    }
+
+                    .frontendMentor {
+                        background-image: url(./assets/svg/icon-frontend-mentor.svg);
+                        transition: .2s ease-in-out;
+                    }
+
+                    .twitter {
+                        background-image: url(./assets/svg/icon-twitter.svg);
+                        transition: .2s ease-in-out;
+                    }
+                }
+            }
+
+            
+        }
+        .head-image {
+            background-image: url(./assets/images/claudiu_vladean.jpg);
+            height: 200px;
+            width: 200px;
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            background-position: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+
