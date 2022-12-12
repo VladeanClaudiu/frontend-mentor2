@@ -174,5 +174,15 @@ body {
   border-bottom: 2px solid #5fd9a3;
   width: 110px;
   padding-bottom: 5px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: .8;
+}
+
+.container .page-head .head-intro h2:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
