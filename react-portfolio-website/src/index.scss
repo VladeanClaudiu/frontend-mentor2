@@ -31,9 +31,13 @@ body {
 }
 
 .container {
-    margin: 20px;
 
     .page-head {
+        background-image: url(./assets/svg/pattern-rings.svg);
+        background-size: 400px 150px;
+        background-repeat: no-repeat;
+        background-position: -130px 80px ;
+
         .logo-plus-social-media {
             position: relative;
             display: flex;

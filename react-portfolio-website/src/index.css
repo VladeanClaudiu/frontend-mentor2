@@ -18,8 +18,11 @@ body {
   padding: 0;
 }
 
-.container {
-  margin: 20px;
+.container .page-head {
+  background-image: url(./assets/svg/pattern-rings.svg);
+  background-size: 400px 150px;
+  background-repeat: no-repeat;
+  background-position: -130px 80px;
 }
 
 .container .page-head .logo-plus-social-media {
