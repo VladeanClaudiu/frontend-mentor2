@@ -19,7 +19,11 @@ function App() {
           </div>
         </div>
         <div className='head-image'>
-
+        </div>
+        <div className="head-intro">
+          <h1>Nice to meet you!<br/>I'm <span>Claudiu</span>.</h1>
+          <p>Based in Bray, Ireland. I'm a front-end developer passionate about writing resusable code and learning new skills to add to my current skillset.</p>
+          <h2>CONTACT ME</h2>
         </div>
       </div>
 

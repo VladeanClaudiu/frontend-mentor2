@@ -51,9 +51,11 @@ body {
 
                 p {
                     margin-bottom: 0;
+                    // text-shadow: $Cyan 1px 0 20px;
 
                     span {
                         color: $Cyan;
+                        // text-shadow: $White 1px 0 20px;
                     }
                 }
             }
@@ -78,8 +80,9 @@ body {
                     }
 
                     .git:hover {
+                        filter: drop-shadow( 0px 0px 5px $Cyan);
                         transition: .2s ease-in-out;
-                        filter: invert(68%) sepia(46%) saturate(427%) hue-rotate(101deg) brightness(103%) contrast(89%);
+                        
                     }
 
                     .linkedIn {
@@ -87,14 +90,32 @@ body {
                         transition: .2s ease-in-out;
                     }
 
+                    .linkedIn:hover {
+                        filter: drop-shadow( 0px 0px 5px $Cyan);
+                        transition: .2s ease-in-out;
+                        
+                    }
+
                     .frontendMentor {
                         background-image: url(./assets/svg/icon-frontend-mentor.svg);
                         transition: .2s ease-in-out;
                     }
 
+                    .frontendMentor:hover {
+                        filter: drop-shadow( 0px 0px 5px $Cyan);
+                        transition: .2s ease-in-out;
+                        
+                    }
+
                     .twitter {
                         background-image: url(./assets/svg/icon-twitter.svg);
                         transition: .2s ease-in-out;
+                    }
+
+                    .twitter:hover {
+                        filter: drop-shadow( 0px 0px 5px $Cyan);
+                        transition: .2s ease-in-out;
+                        
                     }
                 }
             }
@@ -110,6 +131,41 @@ body {
             border-radius: 50%;
             background-position: center;
             margin: 0 auto;
+        }
+        .head-intro {
+            display: flex;
+            flex-direction: column;
+            margin: 0 30px 0 30px;
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                font-size: var(--step-4);
+                color: $White;
+                font-weight: normal;
+                span {
+                    text-decoration: underline;
+                    text-decoration-color: $Cyan;
+                }
+            }
+
+            p {
+                color: $LightGray;
+                font-weight: normal;
+                font-size: var(--step--1);
+                line-height: var(--step-2);
+            }
+
+            h2 {
+                font-size: var(--step-0);
+                color: $White;
+                font-weight: normal;
+                letter-spacing: 1px;
+                border-bottom: 2px solid $Cyan;
+                width: 110px;
+                padding-bottom: 5px;
+            }
+
         }
     }
 }
