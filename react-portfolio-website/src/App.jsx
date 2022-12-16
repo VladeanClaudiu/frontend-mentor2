@@ -1,6 +1,16 @@
 import './App.css'
+import Skill from './components/Skill'
+import { experienceData } from './data/data'
 
 function App() {
+  const skillsData = experienceData();
+  const skills = skillsData.map(item => 
+    <Skill 
+      key = {item.id}
+      skill = {item.skill}
+      years = {item.years}
+    />
+  )
 
   return (
    <div className='container'>
@@ -25,6 +35,9 @@ function App() {
           <p>Based in Bray, Ireland. I'm a front-end developer working at Danu Sports. I'm passionate about writing reusable code and learning new skills.</p>
           <h2 className='head-contact-button'>CONTACT ME</h2>
         </div>
+      </div>
+      <div className='skills'>
+        {skills}
       </div>
 
    </div>
