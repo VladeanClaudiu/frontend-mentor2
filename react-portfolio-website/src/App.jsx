@@ -3,10 +3,10 @@ import './App.css'
 function App() {
 
   return (
-   <div className="container">
+   <div className='container'>
       <div className='page-head'>
         <div className='logo-plus-social-media'>
-          <div className="logo">
+          <div className='logo'>
             <p>claudiu<span>vladean</span></p>
           </div>
           <div className='social-media'>
@@ -20,10 +20,10 @@ function App() {
         </div>
         <div className='head-image'>
         </div>
-        <div className="head-intro">
+        <div className='head-intro'>
           <h1>Nice to meet you!<br/>I'm <span>Claudiu</span>.</h1>
           <p>Based in Bray, Ireland. I'm a front-end developer working at Danu Sports. I'm passionate about writing reusable code and learning new skills.</p>
-          <h2>CONTACT ME</h2>
+          <h2 className='head-contact-button'>CONTACT ME</h2>
         </div>
       </div>
 
