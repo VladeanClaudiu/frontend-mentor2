@@ -1,6 +1,6 @@
 /* @link https://utopia.fyi/type/calculator?c=375,16,1.2,1440,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 //font import and declared
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
 $SopaceGrotesk: 'Space Grotesk', sans-serif; 
 
 
@@ -249,7 +249,7 @@ body {
             font-weight: normal;
             letter-spacing: 1px;
             border-bottom: 2px solid $Cyan;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
             transition: .2s ease-in-out;
             opacity: .8;
             cursor: pointer;
@@ -268,6 +268,53 @@ body {
                 margin: 20px 0 20px 0;
                 .project-image {
                     width: 100%;
+                }
+
+                .project-title {
+                    color: $White;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+
+                .project-skills {
+                    display: flex;
+                    
+                    p{
+                        text-transform: uppercase;
+                        color: $LightGray;
+                        margin-right: 15px;
+                        font-weight: lighter;
+                    }
+                }
+
+                .project-sources {
+                    display: flex;
+                    
+                    a {
+                        text-decoration: none;
+                        margin-right: 20px;
+
+                        h2 {
+                            text-transform: uppercase;
+                            margin-top: 0;
+                            font-size: var(--step-0);
+                            color: $White;
+                            font-weight: normal;
+                            letter-spacing: 1px;
+                            border-bottom: 2px solid $Cyan;
+                            padding-bottom: 8px;
+                            transition: .2s ease-in-out;
+                            opacity: .8;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+
+                        h2:hover {
+                            transition: .2s ease-in-out;
+                            opacity: 1; 
+                        }
+                    }
                 }
             }
        }

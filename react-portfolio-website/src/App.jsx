@@ -14,7 +14,17 @@ function App() {
     />
   )
 
-  // const projects = projectData.map()
+  const projects = projectsData.map(item =>
+    <Project 
+      key = {item.project_id}
+      small_image = {item.project_thumbnail_small}
+      large_image = {item.project_thumbnail_large}
+      title = {item.project_title}
+      skills = {item.project_skills}
+      live_link = {item.live_link}
+      code_link = {item.code_link}
+    />
+    )
 
   return (
    <div className='container'>
@@ -51,7 +61,7 @@ function App() {
           <h2 className='head-contact-button'>CONTACT ME</h2>
         </div>
         <div className='projects-components'>
-          {<Project />}
+          {projects}
         </div>
       </div>
 

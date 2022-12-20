@@ -1,5 +1,5 @@
 /* @link https://utopia.fyi/type/calculator?c=375,16,1.2,1440,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap");
 :root {
   --step--2: clamp(0.69rem, calc(0.66rem + 0.16vw), 0.80rem);
   --step--1: clamp(0.83rem, calc(0.77rem + 0.25vw), 1.00rem);
@@ -289,7 +289,7 @@ body {
   font-weight: normal;
   letter-spacing: 1px;
   border-bottom: 2px solid #5fd9a3;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   opacity: .8;
@@ -310,5 +310,58 @@ body {
 
 .container .projects .projects-components .project .project-image {
   width: 100%;
+}
+
+.container .projects .projects-components .project .project-title {
+  color: #fefefe;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.container .projects .projects-components .project .project-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .projects .projects-components .project .project-skills p {
+  text-transform: uppercase;
+  color: #cdcdcd;
+  margin-right: 15px;
+  font-weight: lighter;
+}
+
+.container .projects .projects-components .project .project-sources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .projects .projects-components .project .project-sources a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.container .projects .projects-components .project .project-sources a h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: var(--step-0);
+  color: #fefefe;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #5fd9a3;
+  padding-bottom: 8px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: .8;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.container .projects .projects-components .project .project-sources a h2:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
