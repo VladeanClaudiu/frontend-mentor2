@@ -212,12 +212,12 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   opacity: .8;
+  cursor: pointer;
 }
 
 .container .page-head .head-intro h2:hover {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-  cursor: pointer;
   opacity: 1;
 }
 
@@ -236,8 +236,8 @@ body {
   background-image: url(./assets/svg/pattern-rings.svg);
   background-size: 400px 120px;
   background-repeat: no-repeat;
-  background-position: 200px 510px;
-  padding-bottom: 40px;
+  background-position: 200px 500px;
+  padding-bottom: 28px;
 }
 
 .container .skills .skill .skill-title {
@@ -252,5 +252,63 @@ body {
   margin: 0;
   font-size: 15px;
   opacity: .8;
+}
+
+.container .skills .skills-divider {
+  border-top: 1px solid #fefefe;
+  margin: 30px;
+  width: 82%;
+}
+
+.container .projects {
+  margin: 10px 30px 30px 30px;
+}
+
+.container .projects .projects-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .projects .projects-head h2 {
+  color: #fefefe;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container .projects .projects-head .head-contact-button {
+  font-size: var(--step-0);
+  color: #fefefe;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #5fd9a3;
+  padding-bottom: 5px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: .8;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container .projects .projects-head .head-contact-button:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: 1;
+}
+
+.container .projects .projects-components .project {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.container .projects .projects-components .project .project-image {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

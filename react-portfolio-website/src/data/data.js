@@ -34,3 +34,46 @@ export function experienceData() {
 
   return experience;
 }
+
+export function projectData() {
+  const projects = [
+    {
+      project_id: 1,
+      project_thumbnail_small: 'thumbnail-project-1-small.webp',
+      project_thumbnail_large: 'thumbnail-project-1-large.webp',
+      project_title: "Design Portfolio",
+      project_skills: ["HTML", "CSS"],
+      live_link: "#",
+      code_link: "#",
+    },
+    {
+      project_id: 2,
+      project_thumbnail_small: 'thumbnail-project-1-small.webp',
+      project_thumbnail_large: 'thumbnail-project-1-large.webp',
+      project_title: "Design Portfolio",
+      project_skills: ["HTML", "CSS"],
+      live_link: "#",
+      code_link: "#",
+    },
+    {
+      project_id: 3,
+      project_thumbnail_small: 'thumbnail-project-1-small.webp',
+      project_thumbnail_large: 'thumbnail-project-1-large.webp',
+      project_title: "Design Portfolio",
+      project_skills: ["HTML", "CSS"],
+      live_link: "#",
+      code_link: "#",
+    },
+    {
+      project_id: 4,
+      project_thumbnail_small: 'thumbnail-project-1-small.webp',
+      project_thumbnail_large: 'thumbnail-project-1-large.webp',
+      project_title: "Design Portfolio",
+      project_skills: ["HTML", "CSS"],
+      live_link: "#",
+      code_link: "#",
+    },
+  ];
+
+  return projects;
+}

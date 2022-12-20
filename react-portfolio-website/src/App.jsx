@@ -1,9 +1,11 @@
 import './App.css'
 import Skill from './components/Skill'
-import { experienceData } from './data/data'
+import { experienceData , projectData} from './data/data'
+import Project from './components/Project';
 
 function App() {
   const skillsData = experienceData();
+  const projectsData = projectData();
   const skills = skillsData.map(item => 
     <Skill 
       key = {item.id}
@@ -11,6 +13,8 @@ function App() {
       years = {item.years}
     />
   )
+
+  // const projects = projectData.map()
 
   return (
    <div className='container'>
@@ -38,6 +42,17 @@ function App() {
       </div>
       <div className='skills'>
         {skills}
+        <div className='skills-divider'>
+        </div>
+      </div>
+      <div className='projects'>
+        <div className='projects-head'>
+          <h2>Projects</h2>
+          <h2 className='head-contact-button'>CONTACT ME</h2>
+        </div>
+        <div className='projects-components'>
+          {<Project />}
+        </div>
       </div>
 
    </div>

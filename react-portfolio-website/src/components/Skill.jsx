@@ -1,5 +1,4 @@
  export default function Skill(props){
-    console.log(props.skill)
     const {skill, years} = props;
     return (
         <div className='skill'>
