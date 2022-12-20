@@ -1,4 +1,3 @@
-import { width } from "@mui/system"
 
 export default function Project(props) {
     const {small_image, large_image, title, skills, live_link, code_link} = props;
