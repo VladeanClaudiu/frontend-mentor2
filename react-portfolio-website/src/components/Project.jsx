@@ -5,7 +5,7 @@ export default function Project(props) {
 
     return(
         <div className="project">
-            <img className="project-image" src={`./src/assets/projectImages/${small_image}`} alt="image of project" />
+            <img className="project-image" src={`../assets/projectImages/${small_image}`} alt="image of project" />
             <h3 className="project-title">{title}</h3>
             <div className="project-skills">
                 {skills.map(item => (<p key={skills.indexOf(item)}>{item}</p>))}
